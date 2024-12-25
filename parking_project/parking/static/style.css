@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register {
+    margin-top: 100px
+
+}
+
+.image-rs6 {
+    max-height: 300px;
+}

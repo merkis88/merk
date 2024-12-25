@@ -1,0 +1,19 @@
+{% extends 'base_generic.html' %}
+{% block content %}
+
+<div class="profile text-center">
+    <h1>Ваш профиль</h1>
+    <p>Имя: {{user.username}}</p>
+    <ul>
+        {% for car in cars %}
+        <li>
+            Бренд: {{ car.brand }}
+            Владалец: {{ car.owner }}
+            Дата и время въезда: {{ car.entry_time }}
+            Стоимость стоянки: {{ parking_fee }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
